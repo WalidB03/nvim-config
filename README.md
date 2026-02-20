@@ -13,7 +13,7 @@ This is my personal configuration files for Neovim `v0.11`. Inspired by ThePrime
 
 ## File tree
 
-``` Bash
+```bash
 ./
 ├── init.lua
 └── lua/

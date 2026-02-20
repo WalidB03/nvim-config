@@ -24,13 +24,6 @@ vim.opt.relativenumber = true
 ----------------
 vim.opt.mouse = ""
 
--- Disable arrow keys --
-------------------------
-vim.keymap.set("", "<left>", "<cmd>echo 'Use HJKL'<CR>")
-vim.keymap.set("", "<right>", "<cmd>echo 'Use HJKL'<CR>")
-vim.keymap.set("", "<up>", "<cmd>echo 'Use HJKL'<CR>")
-vim.keymap.set("", "<down>", "<cmd>echo 'Use HJKL'<CR>")
-
 -- Show mode --
 ---------------
 vim.opt.showmode = true

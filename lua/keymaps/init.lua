@@ -1,6 +1,3 @@
-require("keymaps.telescope")
-require("keymaps.lsp")
-
 -- open Explorer --
 -------------------
 vim.keymap.set("n", "<leader>fe", vim.cmd.Ex)
@@ -12,6 +9,10 @@ vim.keymap.set("n", "<leader><leader>", vim.cmd.so)
 -- navigate windows --
 ----------------------
 vim.keymap.set("n", "<leader><Tab>", "<C-w><C-w>")
+
+-- go back --
+---------------
+vim.keymap.set("n", "<leader>gb", "<C-o>")
 
 -- move selected lines --
 ----------------

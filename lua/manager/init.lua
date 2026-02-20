@@ -21,6 +21,7 @@ require("lazy").setup({
   spec = {
     { import = "manager.plugins" },
   },
+  ui = { border = "rounded" },
   install = { colorscheme = { "rose-pine" } },
   checker = { enabled = true },
 })

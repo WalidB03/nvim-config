@@ -1,4 +1,4 @@
--- Highlight when yanking text --
+-- Highlight on yank --
 ---------------------------------
 vim.api.nvim_create_autocmd("TextYankPost", {
     desc = "Highlight when yanking (copying) text",

@@ -11,9 +11,9 @@ require("rose-pine").setup({
     },
 
     styles = {
+        transparency = true,
         bold = false,
         italic = false,
-        transparency = true,
     },
 
     palette = {
@@ -38,6 +38,22 @@ require("rose-pine").setup({
         MatchParen = {fg = "#204080", bg = "none", inherit = false},
         WinSeparator = {fg = "#102040", inherit = false},
     },
+
+    before_highlight = function(group, highlight)
+        if highlight.underline then
+            highlight.underline = false
+        end
+
+        if highlight.strikethrough then
+            highlight.strikethrough = false
+        end
+
+        if highlight.undercurl then
+            highlight.undercurl = false
+            highlight.strikethrough = true
+            highlight.italic = true
+        end
+    end,
 })
 
 vim.cmd("colorscheme rose-pine")
