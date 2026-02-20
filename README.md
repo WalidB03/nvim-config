@@ -15,33 +15,28 @@ This is my personal configuration files for Neovim `v0.11`. Inspired by ThePrime
 
 ```bash
 ./
-├── init.lua
-└── lua/
-    ├── behavior/
-    │   ├── autocommands.lua
-    │   └── init.lua
-    ├── keymaps/
-    │   ├── init.lua
-    │   ├── lsp.lua
-    │   └── telescope.lua
-    ├── manager/
-    │   ├── init.lua
-    │   └── plugins/
-    │       ├── lspconfig/
-    │       │   ├── config.lua
-    │       │   └── init.lua
-    │       ├── rose-pine/
-    │       │   ├── config.lua
-    │       │   └── init.lua
-    │       ├── telescope/
-    │       │   ├── config.lua
-    │       │   └── init.lua
-    │       └── treesitter/
-    │           ├── config.lua
-    │           └── init.lua
-    └── style/
-        ├── init.lua
-        └── lsp.lua
+├── lua/
+│   ├── behavior/
+│   │   ├── autocommands.lua
+│   │   └── init.lua
+│   ├── keymaps/
+│   │   └── init.lua
+│   └── manager/
+│       ├── plugins/
+│       │   ├── lspconfig/
+│       │   │   ├── config.lua
+│       │   │   └── init.lua
+│       │   ├── rose-pine/
+│       │   │   ├── config.lua
+│       │   │   └── init.lua
+│       │   ├── telescope/
+│       │   │   ├── config.lua
+│       │   │   └── init.lua
+│       │   └── treesitter/
+│       │       ├── config.lua
+│       │       └── init.lua
+│       └── init.lua
+└── init.lua
 ```
 
 ## Installation
@@ -61,5 +56,5 @@ git clone https://github.com/WalidB03/nvim-config ~/.config/nvim
 nvim
 ```
 
-The first startup will automatically install lazy.nvim and all configured plugins.
+The first startup will automatically install `lazy.nvim` and all configured plugins.
 
