@@ -20,6 +20,8 @@ require("rose-pine").setup({
         dawn = {
             text = "#c2dfeb",
             gold = "#2B704A",
+            rose = "#b4637a",
+            love = "#d7827e",
             base = "#191724",
             surface = "#1f1d2e",
             overlay = "#26233a",
