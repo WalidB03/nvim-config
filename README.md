@@ -1,6 +1,6 @@
 # Neovim v0.11 Configuration Setup
 
-This is my personal configuration files for Neovim `v0.11`. Inspired by ThePrimeAgen's setup and tailored to integrate in my zen-full Arch Linux setup with SwayWM and WezTerm.
+This is my personal configuration files for Neovim `v0.12`. Inspired by ThePrimeAgen's setup and tailored to integrate in my zen-full Arch Linux setup with SwayWM and WezTerm.
 
 ## Features
 
@@ -36,7 +36,11 @@ This is my personal configuration files for Neovim `v0.11`. Inspired by ThePrime
 │       │       ├── config.lua
 │       │       └── init.lua
 │       └── init.lua
-└── init.lua
+├── init.lua
+├── lazy-lock.json
+└── README.md
+
+10 directories, 15 files
 ```
 
 ## Installation

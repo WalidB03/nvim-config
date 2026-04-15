@@ -1,18 +1,19 @@
-require("nvim-treesitter.configs").setup {
-    ensure_installed = {
+require("nvim-treesitter").install {
+    "astro", "bash", "blade", "c", "cpp",
+    "css", "go", "html", "javascript", "lua",
+    "markdown", "markdown_inline", "php", "php_only", "python", "query",
+    "sql", "typescript", "tsx", "vim", "vimdoc",
+}
+
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = {
         "astro", "bash", "blade", "c", "cpp",
-        "css", "go", "html", "javascript", "lua",
-        "markdown", "markdown_inline", "php","python", "query",
+        "css", "go", "html", "javascript", "javascriptreact", "lua",
+        "markdown", "markdown_inline", "php", "php_only", "python", "query",
         "sql", "typescript", "tsx", "vim", "vimdoc",
     },
-    sync_install = false,
-    auto_install = false,
-    highlight = {
-        disable = { "dockerfile" },
-        enable = true,
-        additional_vim_regex_highlighting = false
-    },
-    indent = {
-        enable = true,
-    }
-}
+    callback = function()
+        vim.treesitter.start()
+    end,
+})
+
